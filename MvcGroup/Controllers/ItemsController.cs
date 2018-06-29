@@ -54,8 +54,6 @@ namespace MvcGroup.Controllers
 		public JsonResponse Delete(int? id) {
 			if (id == null)
 				return new JsonResponse { Error = "null", Message = "failed" };
-			if (!ModelState.IsValid)
-				return new JsonResponse { Error = "non valid", Message = "failed" };
 			var item = db.Items.Find(id);
 			db.Items.Remove(item);
 			db.SaveChanges();
