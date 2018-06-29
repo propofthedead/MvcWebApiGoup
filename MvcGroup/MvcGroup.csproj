@@ -200,6 +200,10 @@
     <Compile Include="Migrations\201806291756338_intial.Designer.cs">
       <DependentUpon>201806291756338_intial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806291904302_add connectionstring.cs" />
+    <Compile Include="Migrations\201806291904302_add connectionstring.Designer.cs">
+      <DependentUpon>201806291904302_add connectionstring.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\GroupContext.cs" />
     <Compile Include="Models\Item.cs" />
@@ -296,6 +300,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201806291756338_intial.resx">
       <DependentUpon>201806291756338_intial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806291904302_add connectionstring.resx">
+      <DependentUpon>201806291904302_add connectionstring.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
